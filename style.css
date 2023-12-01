@@ -1,0 +1,296 @@
+body{
+    background-color: rgb(254, 253, 253);
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+.seccion1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: beige;
+     flex-wrap: wrap;   
+}
+.seccion3{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+.s3{
+    padding: 20px;
+}
+.seccion2 img{
+    width: 100%;
+    height: 50%;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: rgba(168, 166, 166, 0.428);
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+
+    /* margin: 20px; */
+
+}
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+    padding: 15px;
+    font-size: 30px;
+}
+header nav ul li a{
+    color: rgba(152, 95, 5, 0.745);
+    display: flex;
+    gap: 1.1em;
+    
+}
+.nav {
+    background-color: blue;
+}
+/* ul li {
+    color: rgba(8, 5, 0, 0.745);} */
+header a i{
+    color:  darkslategray;
+    font-size: 3em;
+    padding: 0.5 em;
+}
+footer {
+    background-color: rgb(179, 177, 177);
+    padding: 2em;
+}
+footer ul li{
+    color: azure;
+}footer h3{
+    color:bisque
+}
+footer .fa-robot{
+    color:  darkslategray;
+    position: fixed;
+    right: 10;
+    bottom: 100;
+
+}
+.imgs3{
+    border-radius: 10%;
+}
+.parrafosC3{
+    text-align: justify;
+    /* padding: 20px; */
+    background-color: blueviolet;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: rgb(240, 108, 108);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#encabezado ul{
+position: fixed;
+width: 100%;
+height: 100vh;
+background-color: darkslategray;
+text-align: center;
+top: 80px;
+left: 100%;
+transition: all 0.5s ;
+color: white;
+}
+#check:checked ~ ul{
+    left: 0%;
+    display: block;
+}
+#encabezado nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+#encabezado nav ul li a{
+    font-size: 20px;
+}
+#check:checked ~ .checkbtn{
+    color: brown;
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header{
+        background-color: rgba(232, 216, 77, 0.848);
+    }
+    .checkbtn{
+        display:block;
+    }
+}
+/* ------------- Encabezado Contacto ------------- */
+  
+ /* ------------- Encabezado Contacto ------------- */
+  
+ footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #2a343e;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+
+      .form-row button {
+          margin-left: 120px;
+        }        
+        

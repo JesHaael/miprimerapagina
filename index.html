@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <h1 class="logo">
+                <a href="index.html" class= "fuente-acento">MI web<i class="fa-solid fa-robot"></i> </a>
+            </h1>
+            <nav class="nav"> 
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li>Inicio</li>
+                    <li>Acerca de</li>
+                    <li>Trabajos</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+              </ul>
+            </nav>
+        </header>
+        <main id="seccion-principal">
+            <section class="seccion1">
+                <div class="acerca-de">
+                    <h2 class="h22">Acerca de mi</h2>
+                    <p clase="parrafo1">"¡Bienvenido a mi página! Aquí, aprenderás más sobre mí."</p>
+                    <p clase="parrafo2">Me llamo Javier SAtizabal, Vivo en la ciudad de Bogota Colombia,
+                         soy programador y quiero aprender mucho en este curso para poder ayudar a las personas a mostrar lo que hacen.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src='img\yorobot.jpg' alt="imagen portada"/>
+                </div>
+            </section>
+            <section class="seccion2">
+                <img src="img/carrusel-img.jpg" alt="imagen de carrusel">
+            </section>
+            <section class="seccion3">
+                <div class="s3">
+                    <div>
+                        <div><p class="parrafosT3">CSS</p></div>
+                        <div><img src='img\yorobot.jpg' alt="imagen" class="imgs3"/></div>
+                        <div><p class="parrafosC3">1 ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p></div>
+                        <div><a href="#"></a>Leer mas</div>
+                    </div>
+                </div>
+                <div class="s3">
+                    <div>
+                        <div><p class="parrafosT3">HTML</p></div>
+                        <div><img src='img\yorobot.jpg' alt="imagen"class="imgs3"/></div>
+                        <div><p class="parrafosC3">2 ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p></div>
+                        <div><a href="#"></a>Leer mas</div>
+                    </div>
+                </div>
+                <div class="s3">
+                    <div>
+                        <div><p class="parrafosT3">JAVASCRIPT</p></div>
+                        <div><img src='img\yorobot.jpg' alt="imagen"class="imgs3"/></div>
+                        <div><p class="parrafosC3">3 ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p></div>
+                        <div><a href="#"></a>Leer mas</div>
+                    </div>
+                </div>                                
+            </section>
+        </main>
+        <div class="form-header">   
+        <h1>Contacto</h1>
+      <p><em>¡Esperamos tu consulta!</em></p>
+
+      <form action="" method="get" class="formulario" id="form">
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" />
+        </div>
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit">Enviar</button>
+          </div>
+          <p class = "alertas" id="alertas">El nombre debe contener más de 4 carcateres</p>
+      </form>
+      </div>
+        <footer >
+            
+            
+            
+      <div>
+       <a href="#"><i class="fa-solid fa-robot"></i></a>
+            <ul>
+                <!-- <li>Mi primera Pagina</li>
+                <li>Acerca de</li>
+                <li>Trabajos</li>
+                <li>Servicios</li> -->
+                <li> 
+                    <ul>
+                        <li><i class="fa-brands fa-instagram"></i>instagram</i>
+                        <li><i class="fa-brands fa-twitter"></i>Red X</li>
+                        <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+                    </ul>
+                </li>
+            </ul>
+      </div>       
+        </footer>
+
+    </div>
+</body>
+</html>
